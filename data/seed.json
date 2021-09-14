@@ -1,116 +1,213 @@
 {
-    "store": {
-      "currencies": ["eur"]
-    },
-    "users": [
-      {
-        "email": "admin@medusa-test.com",
-        "password": "supersecret"
-      }
-    ],
-    "regions": [
-      {
-        "id": "test-region",
-        "name": "Default Region",
-        "currency_code": "eur",
-        "tax_rate": 0,
-        "payment_providers": ["manual"],
-        "fulfillment_providers": ["manual"],
-        "countries": ["gb", "de", "dk", "se", "fr", "es", "it"]
-      }
-    ],
-    "shipping_options": [
-      {
-        "name": "Standard Shipping",
-        "region_id": "test-region",
-        "provider_id": "manual",
-        "data": {
-          "id": "manual-fulfillment"
-        },
-        "price_type": "flat_rate",
-        "amount": 1000
-      }
-    ],
-    "products": [
-      {
-        "title": "Basic T-Shirt",
-        "subtitle": null,
-        "description": "Reimagine the feeling of a classic T-shirt. With our men's Basic cotton T-shirts, everyday essentials no longer have to be ordinary.",
-        "handle": "basic-shirt",
-        "is_giftcard": false,
-        "images": [],
-        "thumbnail": "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tshirt.png",
-        "options": [
-          {
-            "title": "Size"
-          }
-        ],
-        "variants": [
-          {
-            "title": "S",
-            "prices": [
-              {
-                "currency_code": "eur",
-                "amount": 1950
-              }
-            ],
-            "options": [
-              {
-                "value": "S"
-              }
-            ],
-            "inventory_quantity": 100,
-            "manage_inventory": true
-          },
-          {
-            "title": "M",
-            "prices": [
-              {
-                "currency_code": "eur",
-                "amount": 1950
-              }
-            ],
-            "options": [
-              {
-                "value": "M"
-              }
-            ],
-            "inventory_quantity": 100,
-            "manage_inventory": true
-          },
-          {
-            "title": "L",
-            "prices": [
-              {
-                "currency_code": "eur",
-                "amount": 1950
-              }
-            ],
-            "options": [
-              {
-                "value": "L"
-              }
-            ],
-            "inventory_quantity": 100,
-            "manage_inventory": true
-          },
-          {
-            "title": "XL",
-            "prices": [
-              {
-                "currency_code": "eur",
-                "amount": 1950
-              }
-            ],
-            "options": [
-              {
-                "value": "XL"
-              }
-            ],
-            "inventory_quantity": 100,
-            "manage_inventory": true
-          }
-        ]
-      }
+  "store": {
+    "currencies": [
+      "eur"
     ]
-  }  
+  },
+  "users": [
+    {
+      "email": "admin@medusa-test.com",
+      "password": "supersecret"
+    }
+  ],
+  "regions": [
+    {
+      "id": "test-region",
+      "name": "Default Region",
+      "currency_code": "eur",
+      "tax_rate": 0,
+      "payment_providers": [
+        "manual"
+      ],
+      "fulfillment_providers": [
+        "manual"
+      ],
+      "countries": [
+        "gb",
+        "de",
+        "dk",
+        "se",
+        "fr",
+        "es",
+        "it"
+      ]
+    }
+  ],
+  "shipping_options": [
+    {
+      "name": "Standard Shipping",
+      "region_id": "test-region",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 1000
+    }
+  ],
+  "products": [
+    {
+      "title": "Medusa T-Shirt",
+      "subtitle": "Medusa",
+      "description": "Stylish T-Shirt from Medusa Commerce",
+      "handle": "t-shirt",
+      "is_giftcard": false,
+      "images": [
+        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tshirt.png"
+      ],
+      "options": [
+        {
+          "title": "Size"
+        }
+      ],
+      "variants": [
+        {
+          "title": "XS",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2500
+            }
+          ],
+          "options": [
+            {
+              "value": "XS"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "S",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2500
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2500
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2500
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 2500
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Medusa Water Bottle",
+      "subtitle": "Medusa",
+      "description": "Stylish water bottle from Medusa Commerce",
+      "handle": "water-bottle",
+      "is_giftcard": false,
+      "images": [
+        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/bottle.png"
+      ],
+      "options": [
+        {
+          "title": "Size"
+        }
+      ],
+      "variants": [
+        {
+          "title": "One Size",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 29500
+            }
+          ],
+          "options": [
+            {
+              "value": "One Size"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Medusa Tote Bag",
+      "subtitle": "Medusa",
+      "description": "Stylish totebag from Medusa Commerce",
+      "handle": "tote-bag",
+      "is_giftcard": false,
+      "images": [
+        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tote.png"
+      ],
+      "options": [
+        {
+          "title": "Size"
+        }
+      ],
+      "variants": [
+        {
+          "title": "One Size",
+          "prices": [
+            {
+              "currency_code": "eur",
+              "amount": 1950
+            }
+          ],
+          "options": [
+            {
+              "value": "One Size"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    }
+  ]
+}
