@@ -23,8 +23,14 @@ This repo provides the skeleton to get you started with using <a href="https://g
     <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
   </a>
 </p>
+<div align="center">
+<a href="https://heroku.com/deploy?template=https://github.com/gianmarcomurru/heroku-starter-medusa">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</div>
 
 ## Prerequisites
+
 This starter has minimal prerequisites and most of these will usually already be installed on your computer.
 
 - [Install Node.js](https://nodejs.org/en/download/)
@@ -32,6 +38,7 @@ This starter has minimal prerequisites and most of these will usually already be
 - [Install SQLite](https://www.sqlite.org/download.html)
 
 ## Setting up your store
+
 - Install the Medusa CLI
   ```
   npm install -g @medusajs/medusa
@@ -47,7 +54,7 @@ This starter has minimal prerequisites and most of these will usually already be
   medusa develop
   ```
 
-Your local Medusa server is now running on port **9000**. 
+Your local Medusa server is now running on port **9000**.
 
 ## Try it out
 
@@ -61,7 +68,6 @@ After the seed script has run you will have the following things in you database
 - a Region called Default Region with the countries GB, DE, DK, SE, FR, ES, IT
 - a Shipping Option called Standard Shipping which costs 10 EUR
 - a Product called Cool Test Product with 4 Product Variants that all cost 19.50 EUR
-
 
 Visit [docs.medusa-commerce.com](https://docs.medusa-comerce.com) for further guides.
 
